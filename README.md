@@ -1,6 +1,5 @@
-## ⚠️ Requirements
-    Python >= 3.8.x
-    pip >= 24.0
+## Enxiety Chatbot System Architecture
+![Picture1](https://github.com/user-attachments/assets/2fdb200f-7ff3-438d-8410-04a9be6bf06f)
 
 # 🚀 Setup and Deployment
 ### Lưu ý: 
@@ -8,6 +7,9 @@
 ![env](https://github.com/user-attachments/assets/2ca66518-8d6e-40bb-8289-c6d68a5af2ab)  
 
 ## Cách 1: Cài Đặt và Khởi Chạy Ứng Dụng Python
+### ⚠️ Requirements
+    Python >= 3.8.x
+    pip >= 24.0
 ### 1. Clone repository
 ### 2. Tải các thư viện cần thiết  
 ```bash
