@@ -3,14 +3,14 @@ import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
 from common.base_app import QuizzSearchAppBase
 from common.handlers.llm_handler_base import LLMHandlerBase
-from content_processor import ContentProcessor
+from pinecone_integration.raw_data.content_processor import ContentProcessor
 from typing import List, Dict
 from flask import jsonify, render_template
 from pinecone import Pinecone
 from openai import OpenAI
 import re
 from dotenv import load_dotenv
-from save_result_vector_to_excel import save_to_excel
+from pinecone_integration.raw_data.save_result_vector_to_excel import save_to_excel
 
 class PineconeQuizzSearchApp(QuizzSearchAppBase, LLMHandlerBase):
     def __init__(self, llm_handler, pinecone_index, openai_client):
@@ -96,7 +96,7 @@ class PineconeQuizzSearchApp(QuizzSearchAppBase, LLMHandlerBase):
 # Đọc tệp cấu hình
 load_dotenv()
     
-if __name__ == '__main__':
+def main():
     OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
     GOOGLE_API_KEY = os.getenv('GOOGLE_API_KEY')
     PINECONE_API_KEY = os.getenv('PINECONE_API_KEY')
@@ -110,3 +110,6 @@ if __name__ == '__main__':
 
     app = PineconeQuizzSearchApp(llm_handler, index, openai_client)
     app.run()
+
+if __name__ == '__main__':
+    main()
