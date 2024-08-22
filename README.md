@@ -1,5 +1,5 @@
 ## Enxiety Chatbot System Architecture
-![Picture1](https://github.com/user-attachments/assets/2fdb200f-7ff3-438d-8410-04a9be6bf06f)
+![Picture 1](https://github.com/user-attachments/assets/13ef7ded-b9e4-43fd-a2cc-90eed8131e0b)
 
 # 🚀 Setup and Deployment
 ### Lưu ý: 
