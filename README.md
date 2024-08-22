@@ -3,9 +3,13 @@
 
 # 🚀 Setup and Deployment
 ### Lưu ý: 
-Để dùng được chatbot sinh câu hỏi, bạn phải tạo file .env với nội dung là các API key (của bạn) tương ứng như hình dưới đây (với mỗi cách triển khai, bạn hãy xem hướng dẫn từng cách đó để biết file .env được tạo ở đâu):  
-![env](https://github.com/user-attachments/assets/2ca66518-8d6e-40bb-8289-c6d68a5af2ab)  
-
+Để dùng được chatbot sinh câu hỏi, bạn phải tạo file .env với nội dung là các API key (của bạn) tương ứng như dưới đây (với mỗi cách triển khai, bạn hãy xem hướng dẫn từng cách đó để biết file .env được tạo ở đâu):  
+```bash
+OPENAI_API_KEY=your-openai-api-key
+GOOGLE_API_KEY=your-google-api-key
+PINECONE_API_KEY=your-pinecone-api-key
+ANTHROPIC_API_KEY=your-anthropic-api-key
+```
 ## Cách 1: Cài Đặt và Khởi Chạy Ứng Dụng Python
 ### ⚠️ Requirements
     Python >= 3.8.x
