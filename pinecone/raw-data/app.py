@@ -5,13 +5,13 @@ from common.base_app import QuizzSearchAppBase
 from common.handlers.llm_handler_base import LLMHandlerBase
 from content_processor import ContentProcessor
 from typing import List, Dict
-from openpyxl import Workbook, load_workbook
 from flask import jsonify, render_template
 from pinecone import Pinecone
 from openai import OpenAI
 import re
 from dotenv import load_dotenv
 from save_result_vector_to_excel import save_to_excel
+
 class PineconeQuizzSearchApp(QuizzSearchAppBase, LLMHandlerBase):
     def __init__(self, llm_handler, pinecone_index, openai_client):
         super().__init__(llm_handler)

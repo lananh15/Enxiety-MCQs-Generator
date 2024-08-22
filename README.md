@@ -1,5 +1,5 @@
-## Enxiety Chatbot System Architecture
-![Picture 1](https://github.com/user-attachments/assets/13ef7ded-b9e4-43fd-a2cc-90eed8131e0b)
+## UITeduQ Chatbot System Architecture
+![Picture 1](https://github.com/user-attachments/assets/a3f6add0-255f-4fec-8a83-8033c95868d7)  
 
 # 🚀 Setup and Deployment
 ### Lưu ý: 
@@ -15,7 +15,7 @@
 ```bash
 pip install -r requirements.txt
 ```
-Sau đó bạn cần phải tạo file **.env** trong thư mục gốc là **Enxiety-MCQs-Generator** (Xem lưu ý của **🚀 Setup and Deployment** để biết nội dung của file .env)  
+Sau đó bạn cần phải tạo file **.env** trong thư mục gốc là **UITeduQ-MCQs-Generator** (Xem lưu ý của **🚀 Setup and Deployment** để biết nội dung của file .env)  
 ### 3. Chạy python server
   - Nếu muốn dùng chatbot với dữ liệu được lưu trên pinecone (raw-data) thì xem file **pinecone-with-raw-data.md** hướng dẫn tương ứng trong các thư mục pinecone/raw-data.
 
@@ -25,14 +25,14 @@ Hoàn toàn dùng Command Prompt để chạy lệnh
 ### 2. Pull image về máy  
 Lưu ý image này chỉ sử dụng chatbot với dữ liệu thô được lưu trên pinecone:
 ```bash
-docker pull lananh15/enxiety-mcqs-generator:v1
+docker pull lananh15/uiteduq-mcqs-generator:v1
 ```
 Sau khi pull về kiểm tra bằng lệnh `docker images` sẽ thấy image như hình:  
 ![Screenshot 2024-08-22 112256](https://github.com/user-attachments/assets/e80d5209-9ee4-4640-a1db-47f548519ca4)  
 ### 3. Chạy container  
 Bạn phải tạo file **.env** tại vị trí thư mục đang đứng trong Command Prompt (Xem lưu ý của **🚀 Setup and Deployment** để biết nội dung của file .env), sau đó khởi động container:  
 ```bash
-docker run --name enxiety-mcqs-generator-v1 -dp 5000:5000 --env-file .env lananh15/enxiety-mcqs-generator:v1
+docker run --name uiteduq-mcqs-generator-v1 -dp 5000:5000 --env-file .env lananh15/uiteduq-mcqs-generator:v1
 ```
 Kiểm tra container chạy hay chưa bằng `docker ps -a` thấy như hình dưới là được:  
 ![Screenshot 2024-08-22 112521](https://github.com/user-attachments/assets/6f43df15-68b5-4ea7-8eeb-f06f4218c82d)  
@@ -40,7 +40,7 @@ Lúc này bạn có thể dùng Chatbot bằng cách truy cập vào http://127.
 ![Screenshot 2024-08-19 134243](https://github.com/user-attachments/assets/f11f2571-6abf-4659-902c-1fbacd3db42a)  
 
 # 📝 About Chatbot
-Chatbot hỗ trợ sinh câu hỏi trắc nghiệm cho môn học "Quản lý dự án CNTT" với nội dung môn học gồm 8 chương:  
+Chatbot hỗ trợ sinh câu hỏi trắc nghiệm cho môn học "Quản lý dự án" với nội dung môn học gồm 8 chương:  
 ### Chương 1. Tổng quan
 - Khái niệm về quản lý
 - Sự cần thiết của quản lý dự án
