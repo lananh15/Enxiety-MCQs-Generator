@@ -28,16 +28,16 @@ Lưu ý image này chỉ sử dụng chatbot với dữ liệu thô được lư
 docker pull lananh15/uiteduq-mcqs-generator:v1
 ```
 Sau khi pull về kiểm tra bằng lệnh `docker images` sẽ thấy image như hình:  
-![Screenshot 2024-08-22 112256](https://github.com/user-attachments/assets/e80d5209-9ee4-4640-a1db-47f548519ca4)  
+![Screenshot 2024-08-22 164352](https://github.com/user-attachments/assets/335d0c13-4e49-4001-9bc0-888805778988)  
 ### 3. Chạy container  
 Bạn phải tạo file **.env** tại vị trí thư mục đang đứng trong Command Prompt (Xem lưu ý của **🚀 Setup and Deployment** để biết nội dung của file .env), sau đó khởi động container:  
 ```bash
 docker run --name uiteduq-mcqs-generator-v1 -dp 5000:5000 --env-file .env lananh15/uiteduq-mcqs-generator:v1
 ```
 Kiểm tra container chạy hay chưa bằng `docker ps -a` thấy như hình dưới là được:  
-![Screenshot 2024-08-22 112521](https://github.com/user-attachments/assets/6f43df15-68b5-4ea7-8eeb-f06f4218c82d)  
+![Screenshot 2024-08-22 164534](https://github.com/user-attachments/assets/fccdb8e5-05e7-4fa0-97c4-ef92c2c964f1)  
 Lúc này bạn có thể dùng Chatbot bằng cách truy cập vào http://127.0.0.1:5000/  
-![Screenshot 2024-08-19 134243](https://github.com/user-attachments/assets/f11f2571-6abf-4659-902c-1fbacd3db42a)  
+![Screenshot 2024-08-22 164648](https://github.com/user-attachments/assets/ff4f99a9-f237-41c0-9843-3106e910bc6d)  
 
 # 📝 About Chatbot
 Chatbot hỗ trợ sinh câu hỏi trắc nghiệm cho môn học "Quản lý dự án" với nội dung môn học gồm 8 chương:  
