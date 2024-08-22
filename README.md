@@ -13,34 +13,27 @@
 ```bash
 pip install -r requirements.txt
 ```
-Sau đó bạn cần phải tạo file **.env** trong thư mục gốc là **generate-quizzes-chatbot** (Xem lưu ý của **🚀 Setup and Deployment** để biết nội dung của file .env)  
+Sau đó bạn cần phải tạo file **.env** trong thư mục gốc là **Enxiety-MCQs-Generator** (Xem lưu ý của **🚀 Setup and Deployment** để biết nội dung của file .env)  
 ### 3. Chạy python server
-  - Nếu muốn dùng chatbot với dữ liệu được lưu trên pinecone (có raw-data và structured-data) thì xem file **pinecone-with-raw-data.md** và **pinecone-with-structured-data.md** hướng dẫn tương ứng trong các thư mục pinecone/raw-data và pinecone/structured-data.
+  - Nếu muốn dùng chatbot với dữ liệu được lưu trên pinecone (raw-data) thì xem file **pinecone-with-raw-data.md** hướng dẫn tương ứng trong các thư mục pinecone/raw-data.
 
 ## Cách 2: Triển Khai Ứng Dụng Với Docker 🐳
-Hoàn toàn dùng Terminal để chạy lệnh  
+Hoàn toàn dùng Command Prompt để chạy lệnh  
 ### 1. Tải Docker  
-### 2. Đăng nhập vào Docker  
-Chạy Docker và mở Terminal để chạy cách dòng lệnh dưới đây:
-```bash
-docker login -u username_của_bạn
-```
-Nhập password và login thành công:  
-![Screenshot 2024-08-19 132648](https://github.com/user-attachments/assets/e3359704-8962-472c-b908-a999a2f4e59d)  
-### 3. Pull image về máy  
+### 2. Pull image về máy  
 Lưu ý image này chỉ sử dụng chatbot với dữ liệu thô được lưu trên pinecone:
 ```bash
-docker pull lananh15/generate-quizzes-chatbot:v1
+docker pull lananh15/enxiety-mcqs-generator:v1
 ```
 Sau khi pull về kiểm tra bằng lệnh `docker images` sẽ thấy image như hình:  
-![Screenshot 2024-08-19 133005](https://github.com/user-attachments/assets/c219d618-2e22-4a93-8a3f-5db0245fb575)  
-### 4. Chạy container  
-Bạn phải tạo file **.env** tại vị trí thư mục đang đứng trong terminal (Xem lưu ý của **🚀 Setup and Deployment** để biết nội dung của file .env), sau đó khởi động container:  
+![Screenshot 2024-08-22 112256](https://github.com/user-attachments/assets/e80d5209-9ee4-4640-a1db-47f548519ca4)  
+### 3. Chạy container  
+Bạn phải tạo file **.env** tại vị trí thư mục đang đứng trong Command Prompt (Xem lưu ý của **🚀 Setup and Deployment** để biết nội dung của file .env), sau đó khởi động container:  
 ```bash
-docker run --name generate-quizzes-chatbot-v1 -dp 5000:5000 --env-file .env lananh15/generate-quizzes-chatbot:v1
+docker run --name enxiety-mcqs-generator-v1 -dp 5000:5000 --env-file .env lananh15/enxiety-mcqs-generator:v1
 ```
 Kiểm tra container chạy hay chưa bằng `docker ps -a` thấy như hình dưới là được:  
-![Screenshot 2024-08-19 133507](https://github.com/user-attachments/assets/2c3c6748-e57d-47a3-9a12-c869d3a9c6ff)  
+![Screenshot 2024-08-22 112521](https://github.com/user-attachments/assets/6f43df15-68b5-4ea7-8eeb-f06f4218c82d)  
 Lúc này bạn có thể dùng Chatbot bằng cách truy cập vào http://127.0.0.1:5000/  
 ![Screenshot 2024-08-19 134243](https://github.com/user-attachments/assets/f11f2571-6abf-4659-902c-1fbacd3db42a)  
 
