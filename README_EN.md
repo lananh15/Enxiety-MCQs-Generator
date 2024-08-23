@@ -21,7 +21,7 @@ pip install -r requirements.txt
 ```
 Then you have to create a **.env** in the root directory named **UITeduQ-MCQs-Generator** (Refer to the **🚀 Setup and Deployment** section for the content of the .env file)  
 ### 3. Run the Python server
-  - If you want to use the chatbot with data stored on Pinecone (raw-data), refer to the **pinecone-with-raw-data.md** file for the instructions in the pinecone_integration/raw_data directory.
+  - If you want to use the chatbot with data stored on Pinecone (raw-data), refer to the **README_EN.md** file for the instructions in the pinecone_integration/raw_data directory.
 
 ## Method 2: Deploy the Application with Docker 🐳
 Run commands entirely using Command Prompt  

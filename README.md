@@ -21,7 +21,7 @@ pip install -r requirements.txt
 ```
 Sau đó bạn cần phải tạo file **.env** trong thư mục gốc là **UITeduQ-MCQs-Generator** (Xem lưu ý của **🚀 Setup and Deployment** để biết nội dung của file .env)  
 ### 3. Chạy python server
-  - Nếu muốn dùng chatbot với dữ liệu được lưu trên pinecone (raw-data) thì xem file **pinecone-with-raw-data.md** hướng dẫn tương ứng trong thư mục pinecone/raw-data.
+  - Nếu muốn dùng chatbot với dữ liệu được lưu trên pinecone (raw-data) thì xem file **README.md** hướng dẫn tương ứng trong thư mục pinecone/raw-data.
 
 ## Cách 2: Triển Khai Ứng Dụng Với Docker 🐳
 Hoàn toàn dùng Command Prompt để chạy lệnh  

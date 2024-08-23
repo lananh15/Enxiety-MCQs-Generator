@@ -1,3 +1,0 @@
-## Giải thích các file dữ liệu   
-- File **qtda_raw.txt** là file tổng hợp các nội dung lý thuyết của 8 chương học, được lưu dưới dạng không cấu trúc và chia thành các đoạn văn bản phù hợp cách nhau bởi 1 dòng trống. Được dùng để lưu dữ liệu không cấu trúc lên pinecone (sử dụng trong thư mục cùng cấp với **data** là **pinecone-with-raw-data**)  
-- File **qtda.json** cũng giống như file **qtda_raw.txt** nhưng lại được tổ chức dưới dạng có cấu trúc. Được dùng để lưu dữ liệu có cấu trúc lên pinecone và elasticsearch (sử dụng trong thư mục cùng cấp với **data** là **pinecone-with-structured-data** và **elasticsearch**)
