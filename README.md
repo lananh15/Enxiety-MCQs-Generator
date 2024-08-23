@@ -21,7 +21,7 @@ pip install -r requirements.txt
 ```
 Sau đó bạn cần phải tạo file **.env** trong thư mục gốc là **UITeduQ-MCQs-Generator** (Xem lưu ý của **🚀 Setup and Deployment** để biết nội dung của file .env)  
 ### 3. Chạy python server
-  - Nếu muốn dùng chatbot với dữ liệu được lưu trên pinecone (raw-data) thì xem file **pinecone-with-raw-data.md** hướng dẫn tương ứng trong các thư mục pinecone/raw-data.
+  - Nếu muốn dùng chatbot với dữ liệu được lưu trên pinecone (raw-data) thì xem file **pinecone-with-raw-data.md** hướng dẫn tương ứng trong thư mục pinecone/raw-data.
 
 ## Cách 2: Triển Khai Ứng Dụng Với Docker 🐳
 Hoàn toàn dùng Command Prompt để chạy lệnh  
@@ -32,14 +32,14 @@ Lưu ý image này chỉ sử dụng chatbot với dữ liệu thô được lư
 docker pull lananh15/uiteduq-mcqs-generator:v1
 ```
 Sau khi pull về kiểm tra bằng lệnh `docker images` sẽ thấy image như hình:  
-![Screenshot 2024-08-22 164352](https://github.com/user-attachments/assets/335d0c13-4e49-4001-9bc0-888805778988)  
+![Screenshot 2024-08-23 150916](https://github.com/user-attachments/assets/350e8016-bc51-442c-a28b-8d7ade12fec8)  
 ### 3. Chạy container  
 Bạn phải tạo file **.env** tại vị trí thư mục đang đứng trong Command Prompt (Xem lưu ý của **🚀 Setup and Deployment** để biết nội dung của file .env), sau đó khởi động container:  
 ```bash
 docker run --name uiteduq-mcqs-generator-v1 -dp 5000:5000 --env-file .env lananh15/uiteduq-mcqs-generator:v1
 ```
 Kiểm tra container chạy hay chưa bằng `docker ps -a` thấy như hình dưới là được:  
-![Screenshot 2024-08-22 164534](https://github.com/user-attachments/assets/fccdb8e5-05e7-4fa0-97c4-ef92c2c964f1)  
+![Screenshot 2024-08-23 151044](https://github.com/user-attachments/assets/a3cd71b5-5a1b-4937-a2e8-6d2dc8752783)  
 Lúc này bạn có thể dùng Chatbot bằng cách truy cập vào http://127.0.0.1:5000/  
 ![Screenshot 2024-08-22 164648](https://github.com/user-attachments/assets/ff4f99a9-f237-41c0-9843-3106e910bc6d)  
 

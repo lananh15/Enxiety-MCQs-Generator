@@ -1,6 +1,6 @@
 
 ## :computer: Dùng chatbot hỗ trợ sinh câu hỏi (sử dụng Pinecone với dữ liệu thô)
-**1. Lưu dữ liệu thô từ file qtda_raw.txt lên Pinecone (nếu muốn dùng index của riêng bạn trên pinecone, nếu không hãy xem mục số 2)**  
+### 1. Lưu dữ liệu thô từ file qtda_raw.txt lên Pinecone (nếu muốn dùng index của riêng bạn trên pinecone, nếu không hãy xem mục số 2)  
   - Run file **save_raw_data_to_pinecone.py** để có thể lưu dữ liệu từ file **qtda_raw.txt** trong thư mục **data** lên Pinecone theo các vector, chatbot sẽ sử dụng dữ liệu trên Pinecone để tạo câu hỏi cho môn học.  
 
   **Lưu ý:** Thay đổi API key, tên index khác từ tài khoản Pinecone và có thể sử dụng openai_api_key của riêng bạn.  
@@ -46,12 +46,16 @@
       app.run()
   ```  
 
-**2. Sử dụng chatbot**  
-  - Run file **app.py** và truy cập vào http://127.0.0.1:5000/ để dùng chatbot ở localhost.
-  - Các cú pháp để dùng chatbot:  
-    - **Xem các chương mà chatbot hỗ trợ:** ```chương hỗ trợ```
-    - **Tạo số lượng câu hỏi cho keyword bất kì:** ```keyword: [keyword]: [số lượng câu hỏi (tối đa 15)]```  
-  - Bạn có thể chọn chế độ sinh câu hỏi như Gemini, Claude hoặc ChatGPT nếu bạn muốn.  
+### 2. Sử dụng chatbot  
+- Run file **app.py** và truy cập vào http://127.0.0.1:5000/ để dùng chatbot ở localhost.
+**Lưu ý:** Nếu bạn Run file mà gặp lỗi **Error: Cannot import name 'Pinecone' from 'pinecone'** thì hãy chạy thêm dòng lệnh trong Terminal:
+```bash
+pip install "pinecone-client[grpc]" --upgrade
+```
+- Các cú pháp để dùng chatbot:  
+  - **Xem các chương mà chatbot hỗ trợ:** ```chương hỗ trợ```
+  - **Tạo số lượng câu hỏi cho keyword bất kì:** ```keyword: [keyword]: [số lượng câu hỏi (tối đa 15)]```  
+- Bạn có thể chọn chế độ sinh câu hỏi như Gemini, Claude hoặc ChatGPT nếu bạn muốn.  
   ![chatbot](https://github.com/user-attachments/assets/f64a4b27-d910-4428-a72d-90876bfc53df)
 
 

@@ -3,7 +3,6 @@ flask-cors
 openai
 python-dotenv
 pinecone-client
-pinecone-client[grpc]
 tiktoken
 openpyxl
 langchain_openai
