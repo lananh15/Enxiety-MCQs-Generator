@@ -2,7 +2,7 @@
 ![Picture 1](https://github.com/user-attachments/assets/a3f6add0-255f-4fec-8a83-8033c95868d7)  
 
 # 🚀 Setup and Deployment
-### Lưu ý: 
+### Note: 
 To use our chatbot, you must create a **.env** file with your API keys as shown below (for each deployment method, please refer to the specific instructions to know where to create the .env file):  
 ```bash
 OPENAI_API_KEY=your-openai-api-key
@@ -34,7 +34,7 @@ docker pull lananh15/uiteduq-mcqs-generator:v1
 After pulling the image, check with the command `docker images` to see the image as shown in the picture below:  
 ![Screenshot 2024-08-23 150916](https://github.com/user-attachments/assets/350e8016-bc51-442c-a28b-8d7ade12fec8)  
 ### 3. Run the container  
-You need to create a **.env** file in the current directory in Command Prompt (refer to the **🚀 Setup and Deployment** section for the content of the .env file), and then start the container:  
+You need to create a **.env** file in the current directory in Command Prompt (refer to the note of **🚀 Setup and Deployment** section for the content of the .env file), and then start the container:  
 ```bash
 docker run --name uiteduq-mcqs-generator-v1 -dp 5000:5000 --env-file .env lananh15/uiteduq-mcqs-generator:v1
 ```
