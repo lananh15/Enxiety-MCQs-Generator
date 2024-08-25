@@ -56,4 +56,5 @@ pip install "pinecone-client[grpc]" --upgrade
   - **Xem các chương mà chatbot hỗ trợ:** `chương hỗ trợ`
   - **Tạo số lượng câu hỏi cho keyword bất kì:** `keyword: [keyword]: [số lượng câu hỏi (tối đa 15)]`  
 - Bạn có thể chọn chế độ sinh câu hỏi như Gemini, Claude hoặc ChatGPT nếu bạn muốn.  
-  ![chatbot](https://github.com/user-attachments/assets/f64a4b27-d910-4428-a72d-90876bfc53df)
+  ![chatbot](https://github.com/user-attachments/assets/b6b5d0be-e748-41c5-be33-528d92a93c14)  
+
