@@ -19,16 +19,6 @@ class QuizzSearchAppBase:
 
         if message.lower() == 'chương hỗ trợ':
             return self._handle_chapter_structure()
-        elif message.lower().startswith('chapter:'):
-            return self._handle_questions(message, 'chapter', 25)
-        elif message.lower().startswith('heading:'):
-            return self._handle_questions(message, 'heading', 15)
-        elif message.lower().startswith('subheading:'):
-            return self._handle_questions(message, 'subheading', 10)
-        elif message.lower().startswith('subsubheading:'):
-            return self._handle_questions(message, 'subsubheading', 5)
-        
-        # chỉ dùng cho pinecone với raw data
         elif message.lower().startswith('keyword:'):
             return self._handle_questions_with_keyword(message, 15)
         
