@@ -36,7 +36,8 @@ class ContentProcessor(LLMHandlerBase):
         prompt = self._build_prompt(num_questions, context)
         llm = self.get_llm()
         response = llm.invoke(prompt)
-        print(f"\n\nModel được dùng: {llm}")
+        # bạn có thể bỏ comment dòng phía dưới để in ra tên model được dùng để sinh quizz
+        # print(f"\n\nModel được dùng: {llm}")
         questions = response.content.split('\n\n')
         return [q.strip() for q in questions if q.strip().startswith("Câu hỏi:")]
 

@@ -80,8 +80,9 @@ class PineconeQuizzSearchApp(QuizzSearchAppBase, LLMHandlerBase):
                 result for result in pinecone_results 
                 if check_keyword_in_text(result['metadata']['text'])
             ]
-            print(f"\nCác kết quả dùng để sinh quizz:\n")
-            print(results_to_use)
+            # In kết quả dùng để sinh quizz, bạn có thể bỏ comment 2 dòng dưới đây để có thể in ra kết quả được dùng để sinh quizz
+            # print(f"\nCác kết quả dùng để sinh quizz:\n")
+            # print(results_to_use)
 
             all_questions = self.llm_handler.generate_questions(results_to_use, num_questions)
 

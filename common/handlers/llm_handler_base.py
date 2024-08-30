@@ -30,7 +30,8 @@ class LLMHandlerBase:
     # Gửi toàn bộ nội dung tìm được cho LLM
     def _generate_questions_direct(self, content: str, num_questions: int) -> List[str]:
         llm = self.get_llm()
-        print(f"\nModel được dùng: {llm}")
+        # bạn có thể bỏ comment dòng phía dưới để in ra tên model được dùng để sinh quizz
+        # print(f"\nModel được dùng: {llm}")
         prompt = self._build_prompt(num_questions, content)
         response = llm.invoke(prompt)
         questions = response.content.split('\n\n')
