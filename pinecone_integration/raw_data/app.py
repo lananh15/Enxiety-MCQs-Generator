@@ -68,7 +68,7 @@ class PineconeQuizzSearchApp(QuizzSearchAppBase, LLMHandlerBase):
                 return jsonify({"response": f"Số lượng câu hỏi phải là số dương và không quá {max_questions}."})
 
             pinecone_results = self.search_pinecone(keyword)
-            print(pinecone_results)
+            # print(pinecone_results)
             keyword_parts = keyword.lower().split()
             def check_keyword_in_text(text):
                 # Chia văn bản thành các vế
