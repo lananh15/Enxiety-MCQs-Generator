@@ -22,7 +22,7 @@ class ContentProcessor(LLMHandlerBase):
             all_questions.extend(chunk_questions)
         
         if len(all_questions) < num_questions:
-            full_content = "\n\n".join([chunks])
+            full_content = "\n\n".join(chunks)
             additional_questions = self._generate_questions_direct(full_content, num_questions - len(all_questions))
             all_questions.extend(additional_questions)
         
