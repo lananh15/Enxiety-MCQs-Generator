@@ -158,11 +158,11 @@ The chatbot supports generating multiple-choice questions for the subject 'Proje
 
 # 📚 Reference slides for data of Chatbot
 Note that all slides are in Vietnamese.  
-- Chapter 1. Overview [View](https://drive.google.com/file/d/1x39z2P05V_opGRKuhmcYlv2zew-2gUtS/view?usp=sharing)
-- Chapter 2. Project Management Structure [View](https://drive.google.com/file/d/1o7wxjtSfLGtvvh-bRjNnUZ1JT-MlosY6/view?usp=sharing)
-- Chapter 3. Project Management Processes [View](https://drive.google.com/file/d/1drsYxju-NwqXVlf4XyXVHedbBuzqzP60/view?usp=sharing)
-- Chapter 4. Scope Management [View](https://drive.google.com/file/d/1Ypes5nAxphjN5pBAkQeR2avmTQV7gJ7E/view?usp=sharing)
-- Chapter 5. Time Management [View](https://drive.google.com/file/d/1Tf-mpLD4ip2DFYSa2LRH9FbWnSlqz1En/view?usp=sharing)
-- Chapter 6. Cost Management [View](https://drive.google.com/file/d/1VopOg0HCD7AdKZmDbx8zBfavMQS2wiz5/view?usp=sharing)
-- Chapter 7. Risk Management [View](https://drive.google.com/file/d/1W5Twm2s6YMXDFOmwsmGRuNfN2WiMgmEx/view?usp=sharing)
+- Chapter 1: Overview [View](https://drive.google.com/file/d/1x39z2P05V_opGRKuhmcYlv2zew-2gUtS/view?usp=sharing)
+- Chapter 2: Project Management Structure [View](https://drive.google.com/file/d/1o7wxjtSfLGtvvh-bRjNnUZ1JT-MlosY6/view?usp=sharing)
+- Chapter 3: Project Management Processes [View](https://drive.google.com/file/d/1drsYxju-NwqXVlf4XyXVHedbBuzqzP60/view?usp=sharing)
+- Chapter 4: Scope Management [View](https://drive.google.com/file/d/1Ypes5nAxphjN5pBAkQeR2avmTQV7gJ7E/view?usp=sharing)
+- Chapter 5: Time Management [View](https://drive.google.com/file/d/1Tf-mpLD4ip2DFYSa2LRH9FbWnSlqz1En/view?usp=sharing)
+- Chapter 6: Cost Management [View](https://drive.google.com/file/d/1VopOg0HCD7AdKZmDbx8zBfavMQS2wiz5/view?usp=sharing)
+- Chapter 7: Risk Management [View](https://drive.google.com/file/d/1W5Twm2s6YMXDFOmwsmGRuNfN2WiMgmEx/view?usp=sharing)
 - Chapter 8: Quality Management [View](https://drive.google.com/file/d/1ikRiCLtJw6jyP2yAuLoUO1Jo58Iq6TA5/view?usp=sharing)
