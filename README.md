@@ -1,5 +1,5 @@
 ## UITeduQ Chatbot System Architecture
-![Picture 1](https://github.com/user-attachments/assets/a3f6add0-255f-4fec-8a83-8033c95868d7)  
+![Picture 1](https://github.com/user-attachments/assets/7c4d9555-64e6-4675-a7f3-09cb6cb0142a)  
 
 # 🚀 Setup and Deployment
 ### Lưu ý: 
